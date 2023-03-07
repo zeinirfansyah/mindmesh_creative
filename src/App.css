@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+
+* {
+  font-family: "Tilt Neon", sans-serif;
+  color: #dadada;
+}
+
+span {
+  color: #ffc400;
+}
+
+.hero {
+  background: #212529;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__text .motto1 {
+  font-size: 1rem;
+}
+
+.hero__text .motto2 {
+  font-size: 12px;
+}
+
+.hero__img {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__img img {
+  width: 50%;
+}
+
+/* desktop screen */
+@media (min-width: 768px) {
+  .hero__text .motto1 {
+    font-size: 1.5rem;
+  }
+
+  .hero__text .motto2 {
+    font-size: 1.2rem;
+  }
+
+  .hero__img img {
+    width: 20rem;
+  }
+}
