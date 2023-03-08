@@ -6,14 +6,24 @@
 }
 
 span {
-  color: #ffc400;
+  color: #aa00ff;
+}
+
+nav {
+  background-image: url(./assets/background/boliviainteligente-0WDT5uLGs6c-unsplash_blur.png);
 }
 
 .hero {
-  background: #212529;
-  height: 100vh;
+  height: 92vh;
   display: flex;
   justify-content: center;
+  background-image: url(./assets/background/boliviainteligente-0WDT5uLGs6c-unsplash_blur.png);
+}
+
+.hero__text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 0 10px #ffffff56;
 }
 
 .hero__text .motto1 {
@@ -25,13 +35,24 @@ span {
 }
 
 .hero__img {
-  margin-top: 3rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
 }
 
 .hero__img img {
   width: 50%;
+}
+
+.btn-letstalk {
+  text-decoration: none;
+  color: white;
+  background-color: #aa00ff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-shadow: 0 0 10px #ffffff56;
 }
 
 /* desktop screen */
@@ -42,6 +63,10 @@ span {
 
   .hero__text .motto2 {
     font-size: 1.2rem;
+  }
+
+  .hero__img {
+    margin-top: 2rem;
   }
 
   .hero__img img {
