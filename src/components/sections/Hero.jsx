@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../../assets/illustration/illustration3.svg";
+import HeroImg from "../../assets/illustration/illustration1.svg";
 
 const Hero = () => {
   return (
@@ -12,20 +12,21 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="hero__text text-center">
-            <h1>
-              <span>Mindmesh</span> Creative
-            </h1>
-            <h4 className="motto1">
-              Creative Digital & Technology Solution Provider
-            </h4>
-            <h5 className="motto2">
-              Innovating ideas, Crafting digital reality, and shaping the
-              future.
-            </h5>
-            <a href="" className="btn-letstalk mb-5">
-              Lets Talk
-            </a>
+          <div className="hero__text text-center f_CarterOne">
+            <div className="row">
+              <div className="col">
+                <h1>
+                  <span>Mindmesh</span> Creative
+                </h1>
+                <h4 className="motto1">
+                  Creative Digital & Technology Solution Provider
+                </h4>
+                <h5 className="motto2">
+                  Innovating ideas, Crafting digital reality, and shaping the
+                  future.
+                </h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>

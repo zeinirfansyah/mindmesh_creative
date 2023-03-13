@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,400;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 * {
   font-family: "Tilt Neon", sans-serif;
   color: #dadada;
@@ -13,11 +14,29 @@ nav {
   background-image: url(./assets/background/boliviainteligente-0WDT5uLGs6c-unsplash_blur.png);
 }
 
+.home {
+  background-image: url(./assets/background/2.boliviainteligente-0WDT5uLGs6c-unsplash_blur.png);
+  /* paralax efect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hero {
-  height: 92vh;
   display: flex;
   justify-content: center;
-  background-image: url(./assets/background/boliviainteligente-0WDT5uLGs6c-unsplash_blur.png);
+  margin-bottom: 7rem;
+  /* gradient to bottom */
+  background-image: linear-gradient(180deg, #111111, #10040400);
+  height: 80vh;
+
+  /* background-image: url(./assets/background/boliviainteligente-0WDT5uLGs6c-unsplash_blur.png); */
+}
+
+.f_CarterOne,
+.f_CarterOne span {
+  font-family: "Carter One", cursive;
 }
 
 .hero__text h1 {
@@ -44,7 +63,7 @@ nav {
   width: 50%;
 }
 
-.btn-letstalk {
+.letstalk_btn {
   text-decoration: none;
   color: white;
   background-color: #aa00ff;
@@ -55,8 +74,48 @@ nav {
   text-shadow: 0 0 10px #ffffff56;
 }
 
+.letstalk_btn:hover {
+  background-color: #8300c5;
+  color: white;
+  text-decoration: none;
+}
+
+.card_services {
+  /* gradient border */
+  border: 1px solid #aa00ff;
+  border-radius: 20px !important;
+  background: linear-gradient(45deg, #230034, #100404);
+  box-shadow: 0 5px 10px -2px #7f31d356;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.card_services:hover {
+  box-shadow: 0 5px 10px -2px #7f31d356;
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.services__img img {
+  width: 200px;
+}
+
 /* desktop screen */
 @media (min-width: 768px) {
+  .home {
+    background-image: none;
+    background-color: #111111;
+  }
+
+  .hero {
+    height: 100vh;
+    margin-bottom: 0px;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background-image: linear-gradient(180deg, #19002d, #1b000045);
+    /* box shadow only on bottom */
+    box-shadow: 0 10px 5px -2px #7f31d356;
+  }
   .hero__text .motto1 {
     font-size: 1.5rem;
   }
@@ -71,5 +130,9 @@ nav {
 
   .hero__img img {
     width: 20rem;
+  }
+
+  .card_services {
+    top: -150px;
   }
 }
